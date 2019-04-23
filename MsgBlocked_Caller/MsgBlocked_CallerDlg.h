@@ -4,30 +4,30 @@
 
 #pragma once
 
-
 // CMsgBlockedCallerDlg dialog
-class CMsgBlockedCallerDlg : public CDialogEx
-{
-// Construction
+class CMsgBlockedCallerDlg : public CDialogEx {
+  // Construction
 public:
-	CMsgBlockedCallerDlg(CWnd* pParent = nullptr);	// standard constructor
+  CMsgBlockedCallerDlg(CWnd *pParent = nullptr); // standard constructor
 
 // Dialog Data
 #ifdef AFX_DESIGN_TIME
-	enum { IDD = IDD_MSGBLOCKED_CALLER_DIALOG };
+  enum { IDD = IDD_MSGBLOCKED_CALLER_DIALOG };
 #endif
 
-	protected:
-	virtual void DoDataExchange(CDataExchange* pDX);	// DDX/DDV support
-
-
-// Implementation
 protected:
-	HICON m_hIcon;
+  virtual void DoDataExchange(CDataExchange *pDX); // DDX/DDV support
 
-	// Generated message map functions
-	virtual BOOL OnInitDialog();
-	afx_msg void OnPaint();
-	afx_msg HCURSOR OnQueryDragIcon();
-	DECLARE_MESSAGE_MAP()
+  // Implementation
+protected:
+  HICON m_hIcon;
+
+  // Generated message map functions
+  virtual BOOL OnInitDialog();
+  afx_msg void OnPaint();
+  afx_msg HCURSOR OnQueryDragIcon();
+  DECLARE_MESSAGE_MAP()
+public:
+  afx_msg void OnBnClickedButtonExecute();
+  afx_msg void OnBnClickedButtonExecute1();
 };
